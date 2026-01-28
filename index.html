@@ -435,7 +435,7 @@ Demographics	Single-Parent Families	41.3	% of families with children	2020	40.8	2
       // current display
       let currentText = hasValue ? fmt(effectiveValue, unit) : "TBD";
       if (looksUSD(unit) && hasValue) currentText = `$${currentText}`;
-      if (looksMillion(unit) && hasValue) currentText = `$${currentText}M`;
+      if (looksMillion(unit) && hasValue) currentText = `${currentText}M`;
       if (looksPct(unit, String(effectiveValue)) && hasValue && !looksUSD(unit) && !looksMillion(unit)) currentText = `${currentText}%`;
 
       // year label ABOVE number
